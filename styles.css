@@ -96,7 +96,7 @@ body {
   padding: 30px 0;
 }
 
-.hero__title {
+h1 {
   font-size: 2rem;
   font-weight: bold;
   margin: 10px 0;
@@ -133,7 +133,7 @@ body {
   background: #ffffff;
 }
 
-.card__title { font-weight: bold; font-size: 1.1rem; }
+h3 { font-weight: bold; font-size: 1.1rem; margin-top: 1px;}
 .card__desc { margin-top: 8px; color: #555; }
 
 /* Sections */
@@ -141,7 +141,7 @@ body {
 .section--alt { background: #ffffff; border-top: 1px solid #eee; border-bottom: 1px solid #eee; }
 
 .section__kicker { color: #2f6fed; font-weight: bold; }
-.section__title { font-size: 1.6rem; font-weight: bold; margin: 6px 0; }
+h2 { font-size: 1.6rem; font-weight: bold; margin: 6px 0; }
 .section__desc { color: #555; }
 
 /* Pills */
@@ -217,7 +217,7 @@ body {
     padding: 18px 0;
   }
 
-  .hero__grid {
+  .hero__grid { 
     display: block;
   }
 
@@ -225,7 +225,7 @@ body {
     display: block;
   }
 
-  .section__title { font-size: 1.9rem; }
+  h2 { font-size: 1.9rem; }
   .hero__title { font-size: 2.4rem; }
 }
 

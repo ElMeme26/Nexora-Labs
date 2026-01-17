@@ -27,12 +27,12 @@ body {
 .skip__link:focus { left: 8px; }
 
 /* Topbar */
-.topbar {
+header {
   background: #ffffff;
   border-bottom: 1px solid #e6e6e6;
 }
 
-.topbar .container {
+header .container {
   display: block;
   padding: 14px 0;
 }
@@ -53,16 +53,22 @@ body {
   color: #fff;
   font-weight: bold;
   margin-right: 10px;
+  text-decoration: none;
 }
 
 .brand__text { display: inline-block; vertical-align: top; }
 .brand__name { display: block; font-weight: bold; }
 .brand__tag { display: block; color: #666; font-size: 0.95rem; }
 
-.nav { margin: 10px 0 0; }
-.nav__item { margin-right: 14px; }
-.nav a { color: #2f6fed; text-decoration: none; }
-.nav a:hover { text-decoration: underline; }
+nav { margin: 25px 0;}
+nav a {
+  color: #2f6fed;
+  text-decoration: none; 
+  margin-right: 14px;
+}
+nav a:hover { 
+  text-decoration: underline; 
+}
 
 .cta { margin-top: 12px; }
 
@@ -74,6 +80,7 @@ body {
   text-decoration: none;
   font-weight: bold;
   border: 1px solid transparent;
+  margin-right: 1;
 }
 
 .btn--primary {

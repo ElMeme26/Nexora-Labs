@@ -18,13 +18,14 @@ body {
 /* Skip link */
 .skip__link {
   position: absolute;
-  left: -999px;
-  top: 8px;
+  left: 0;
+  top: -100px;
   background: #111;
   color: #fff;
   padding: 8px 10px;
+  z-index: 100;
 }
-.skip__link:focus { left: 8px; }
+.skip__link:focus { top: 0; }
 
 /* Topbar */
 header {
@@ -140,20 +141,20 @@ h1 {
   background: #ffffff;
 }
 
-h3 { font-weight: bold; font-size: 1.1rem; margin-top: 1px;}
-.card__desc { margin-top: 8px; color: #555; }
+h3 { font-weight: bold; font-size: 1.1rem; margin-top: 1px; margin-bottom: 2px;}
+.card__desc { margin: 8px 0px 0px 0px; color: #555; }
 
 /* Sections */
 .section { padding: 34px 0; }
 .section--alt { background: #ffffff; border-top: 1px solid #eee; border-bottom: 1px solid #eee; }
 
-.section__kicker { color: #2f6fed; font-weight: bold; }
+h4 { color: #2f6fed; font-weight: bold; margin-top: 3px; margin-bottom: 10px;}
 h2 { font-size: 1.6rem; font-weight: bold; margin: 6px 0; }
 .section__desc { color: #555; }
 
 /* Pills */
-.pill-list { margin-top: 10px; }
-.pill {
+.pill__list { margin-top: 10px; list-style: none; padding: 0;}
+.pills {
   display: inline-block;
   padding: 6px 10px;
   border-radius: 999px;
@@ -181,8 +182,8 @@ h2 { font-size: 1.6rem; font-weight: bold; margin: 6px 0; }
 }
 
 /* Form */
-.form__label { font-weight: bold; margin-bottom: 6px; }
-.input {
+label, .hero__name, .hero__email, .hero__company, .contact__name, .contact__email, .contact__message { display: block;font-weight: bold; margin-bottom: 6px; font-size: 17px; margin-top: 10px;}
+input {
   width: 100%;
   padding: 10px;
   border: 1px solid #d8d8d8;
@@ -288,4 +289,58 @@ h2 { font-size: 1.6rem; font-weight: bold; margin: 6px 0; }
     margin-right: 2%;
   }
   .footer__grid > div:last-child { margin-right: 0; }
+}
+
+.em {
+  font-style: italic;
+}
+
+.plan__price {
+  font-weight: bold;
+  margin-bottom: 5px;
+  font-size: 40px;
+  margin-top: 1px;
+  color: #2f6fed;
+}
+
+.plan__desc {
+  margin: 5px 0px 0px 0px;
+}
+
+.plan__list {
+  list-style-type: disc;
+  padding-left: 30px;
+  margin: 10px 0px 10px 0px;
+}
+
+.plans {
+  font-weight: bold;
+}
+
+.plans::marker {
+  color:#2f6fed
+}
+
+.post__meta {
+  color: #2f6fed;
+  margin-bottom: 1px;
+  font-weight: bold;
+}
+
+.post__desc {
+  margin: 5px 0px 5px 0px;
+}
+
+strong {
+  color: #2f6fed;
+}
+
+.footer__links {
+  list-style: none;
+  padding-left: 0px;
+  padding-top: 0px;
+}
+
+.footer__links li {
+  margin-top: 10px;
 }
